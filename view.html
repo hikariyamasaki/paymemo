@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <!-- <script type="text/javascript" src="controller.js"></script> -->
 </head>
 <body>
   <h1>paymemo</h1>
-  <div class="input_area">
+  <form action="controller.php" name="input_area">
       <p>
         日付
-        <input type="text" name="days" size="10">年
-        <input type="text" name="days" size="10">月
-        <input type="text" name="days" size="10">日
+        <input type="text" name="daysY" size="10">年
+        <input type="text" name="daysM" size="10">月
+        <input type="text" name="daysD" size="10">日
       </p>
 
       <p>
@@ -34,7 +35,7 @@
       <p>
         金額&nbsp;0&nbsp;円
       </p>
-      <input type="button" value="OK">
-  </div>
+      <input type="button" value="OK" onclick="okPushed()">
+  </form>
 </body>
 </html>
